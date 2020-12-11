@@ -4,6 +4,20 @@
 //     number: 0,
 //     url: 
 // };
+function requiredInput() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+  // If x is Not a Number or less than one or greater than 50
+  if (isNaN(x) || x < 1 || x > 50) {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
 
 function getDogImage(numberOfDogs) {
   fetch(`https://dog.ceo/api/breeds/image/random/${numberOfDogs}`)
