@@ -10,6 +10,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
 }
+
 .hidden {
   display: none;
 }
@@ -24,6 +25,7 @@ body {
   flex: 1;
   margin: 20px;
 }
+
 @media all and (min-width: 800px) {
   section {
     padding: 0 10%;
